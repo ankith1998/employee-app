@@ -33,7 +33,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter Employee name",
                     prefixIcon: Icon(Icons.account_box),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 Text("Designation"),
@@ -42,7 +44,9 @@ TextEditingController pass =TextEditingController();
                     decoration: InputDecoration(
                       hintText: "Enter designation",
                       prefixIcon: Icon(Icons.work),
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(40.0),
+                      ),
                     ),),
                 Text("Company Name"),
                 TextField(
@@ -50,7 +54,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter company name",
                     prefixIcon: Icon(Icons.branding_watermark),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 Text("Salary"),
@@ -59,7 +65,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter salary",
                     prefixIcon: Icon(Icons.monetization_on),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 Text("Email id"),
@@ -68,7 +76,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter Email id",
                     prefixIcon: Icon(Icons.email),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 Text("Mobile number"),
@@ -77,7 +87,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter mobile number",
                     prefixIcon: Icon(Icons.mobile_screen_share),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 Text("Place"),
@@ -86,7 +98,8 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter place",
                     prefixIcon: Icon(Icons.location_on),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(40.0),),
                   ) ,),
                 Text("Username"),
                 TextField(
@@ -94,7 +107,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter username",
                     prefixIcon: Icon(Icons.supervised_user_circle),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 Text("Password"),
@@ -103,7 +118,9 @@ TextEditingController pass =TextEditingController();
                   decoration: InputDecoration(
                     hintText: "Enter password",
                     prefixIcon: Icon(Icons.lock),
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
                   ),
                 ),
                 RaisedButton(
@@ -130,10 +147,15 @@ TextEditingController pass =TextEditingController();
                   },
                   color: Colors.blue,
                   child: Text("REGISTER"),),
-                RaisedButton(
-                  onPressed: (){},
-                  color: Colors.red,
-                  child: Text("Back to Login"),)
+               Container(
+                 width: 200.0,
+                 height: 40.0,
+                 child: Center(child: Text("BACK to LOGIN")),
+                 decoration: BoxDecoration(
+                   color: Colors.pink,
+                   borderRadius: BorderRadius.circular(40.0),
+                 ),
+               ),
 
               ],
             ),
